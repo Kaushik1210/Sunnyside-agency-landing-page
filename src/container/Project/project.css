@@ -1,0 +1,34 @@
+.project_desktop_view{
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 3;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (max-width:5000px) {
+    .project_mobile_view{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .project_desktop_view{
+        display: none;
+    }
+    .project_mobile_view{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:350px) {
+    
+    .project_mobile_view{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,76 @@
+.about_bg{
+    background:url(/src/assets/imageheader.jpg);
+    height:800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.about_overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 100px;
+}
+
+.about_heading{
+    text-align: center;
+    line-height: 1.6;
+    font-family: var(--Fraunces);
+    font-weight: 900;
+    color: var(--White);
+    letter-spacing: 5px;
+    font-size: 45px;
+    transition: 0.3s;
+}
+
+.arrowdown{
+    height: 100px;
+    width: 35px;
+    position: relative;
+    animation-name: jump-down ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump-down {
+    0%,
+    50%,
+    100% {transform: translateY(0px);}
+
+    10%,
+    40%{transform: translateY(20px);}
+
+    25%{transform: translateY(10px);}
+    
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .about_overlay{
+        padding-top: 130px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .about_heading{
+        font-size: 25px;
+    }
+    .about_bg{
+        height: 600px;
+    }
+
+    .about_overlay{
+        padding-top: 60px;
+    }
+}
+
+
+
+
+
+
+

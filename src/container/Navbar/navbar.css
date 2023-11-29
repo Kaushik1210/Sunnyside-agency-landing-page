@@ -1,0 +1,156 @@
+.navbar{
+    padding: 20px;    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 150px;
+padding-top: 5px;
+transition: 0.3s;
+}
+.hamburger{
+    display: none;
+    height: auto;
+    width: 30px;
+    padding-top: 5px;    
+}
+
+.header_menu .menu{
+    
+    margin-left: 40px;
+    font-family: var(--Barlow);
+    text-decoration: none;
+    color: var(--White);
+    font-size: 18px; 
+}
+.contact_button_link{
+    text-decoration: none;
+    color: var(--Verydarkdesaturatedblue);
+    font-family: var(--Fraunces);
+}
+
+.contact_button{
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 120px;
+    margin-left: 40px;
+    
+    background-color: var(--White);
+    
+}
+
+.dropdownmenu{
+    transition: 0.3s;
+    position: absolute;
+    background-color: var(--White);
+    row-gap: 2.5rem;
+    padding: 40px 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 6rem;
+    right: 20px;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.dropdownmenu::before{
+    display: flex;
+    content: '';
+    position: absolute;
+    top:-9px;
+    right: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    
+    transform: rotate(-90deg);
+    
+
+}
+
+button a{
+    text-decoration: none;
+    color: var(--Verydarkdesaturatedblue);
+    font-family: var(--Fraunces);
+    font-size: 18px;
+}
+
+.dropdownmenu button{
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 150px;    
+    background-color: var(--Yellow);
+}
+
+.dropdownmenu .menu{
+    
+    font-family: var(--Barlow);
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+    font-size: 20px; 
+    transition: 0.3s;
+}
+
+.dropdownmenu .menu:hover{
+    color: var(--Yellow);
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .hamburger{
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .header_menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .logo{
+        width: 100px;
+    }
+    .dropdownmenu{
+        width: 200px;
+    }
+    
+    
+}
+@media screen and (max-width:400px) {
+    .navbar{
+        padding: 15px;
+    }
+    .hamburger{
+        height: 18px;
+        width: 25px;
+    }
+    .dropdownmenu{
+        gap: 1.5rem;
+    }
+    
+    
+}
+
+@media screen and (max-width:300px) {
+    .dropdownmenu{
+        width: 150px;
+    }
+}
